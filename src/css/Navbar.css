@@ -1,0 +1,116 @@
+.nav{
+    /* background-color: rgb(255,255,255,0.7); */
+    background-color:#16202c;
+    
+    position: fixed;
+    width: 100%;
+    top:0;
+    
+    
+
+}
+.refresh-logo{
+  width: 25px;
+}
+.logout-btn {
+  font-size: 14px; /* Adjust the font size as needed */
+  padding: 5px 10px; /* Adjust the padding as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 5rem;
+    height: 2.5rem;
+}
+.text-btn{
+  font-size: 7px;
+  justify-content: center;
+  position: absolute;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 3rem;
+}
+.nav-logo {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Allow the height to adjust automatically */
+  object-fit: contain;
+  margin-top: 0.5rem;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color:white
+}
+.nav-item{
+    display: flex;
+    float: left;
+    justify-content: space-evenly;
+    gap:1rem;
+  
+    
+}
+
+@media (max-width: 768px) {
+    .nav {
+      width: 100%;
+    }
+  
+    .nav-items {
+      display: flex;
+      align-items: center;
+     justify-content: space-between;
+    }
+  
+    .nav-logo {
+      width: 50px;
+    }
+  
+    .nav-item {
+      display: flex;
+      float: right;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+     
+    }
+  }
+  /* Navbar.css */
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn {
+  background-color: #1582e7;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.text-btn {
+  font-size: 16px;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}

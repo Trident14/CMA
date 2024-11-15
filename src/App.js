@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './css/App.css';
+
+import { Auth } from "./components/auth.js";
+import { Navbar } from './components/Navbar';
+import { useCookies } from "react-cookie";
+import Dashboard from './components/Dashboard.js';
+import NotAuthorized from './components/Authorized-401.js';
+import EditCar from './components/EditCar';  // EditCar component
+import CreateCar from './components/CreateCar.js';
+
 
 function App() {
+  const [cookies] = useCookies(["access_token"]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Auth />} />
+            <Route path='/auth' element={<Auth />} />
+            <Route path="/dashboard" element={!cookies.access_token ? <NotAuthorized /> : <Dashboard />} />
+            <Route path="/car/edit/:carId" element={!cookies.access_token ? <NotAuthorized /> : <EditCar />} />
+            <Route path="/car/create" element={!cookies.access_token ? <NotAuthorized /> : <CreateCar />} />
+         
+          </Routes>
+        </Router>
     </div>
   );
 }

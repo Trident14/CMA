@@ -1,0 +1,16 @@
+/* src/styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: blue;
+}
+
+input, textarea, button {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+}

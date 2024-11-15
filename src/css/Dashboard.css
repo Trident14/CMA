@@ -1,0 +1,49 @@
+/* Styles for Dashboard component */
+ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+  }
+#dashbord{
+  margin-top: 5rem;
+}
+  
+  li {
+    margin-bottom: 20px; /* Adds spacing between list items */
+    border: 1px solid #ddd; /* Optional: Adds a border to each car item */
+    padding: 15px; /* Adds padding inside each car item */
+    border-radius: 8px; /* Adds rounded corners */
+    background-color: #f9f9f9; /* Light background for each item */
+  }
+  
+  h2 {
+    margin-top: 0; /* Removes top margin */
+  }
+  
+  img {
+    display: inline-block; /* Ensures images stay inline */
+    border-radius: 5px; /* Adds rounded corners to images */
+  }
+  
+  button {
+    margin-right: 10px; /* Adds space between buttons */
+    padding: 8px 12px; /* Adds padding inside buttons */
+    border: none; /* Removes default border */
+    background-color: #007bff; /* Blue button background */
+    color: white; /* White button text */
+    border-radius: 4px; /* Rounded corners for buttons */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+ 
+.carousel-root {
+    max-width: 500px; /* Set max-width to control the carousel size */
+    margin: auto; /* Center the carousel */
+  }
+  
+  .carousel img {
+    border-radius: 8px; /* Adds rounded corners to images */
+  }
+  
